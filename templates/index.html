@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v4.9.7, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.9.7, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href='{{url_for('static', filename= "assets/images/logo4.png") }}' type="image/x-icon">
+  <meta name="description" content="">
+
+  <title>Home</title>
+  <link rel="stylesheet" href='{{url_for('static', filename="assets/tether/tether.min.css") }}'>
+  <link rel="stylesheet" href='{{url_for('static', filename= "assets/bootstrap/css/bootstrap.min.css") }}'>
+  <link rel="stylesheet" href='{{url_for('static', filename= "assets/bootstrap/css/bootstrap-grid.min.css") }}'>
+  <link rel="stylesheet" href='{{url_for('static', filename= "assets/bootstrap/css/bootstrap-reboot.min.css") }}'>
+  <link rel="stylesheet" href='{{url_for('static', filename= "assets/datatables/data-tables.bootstrap4.min.css") }}'>
+  <link rel="stylesheet" href='{{url_for('static', filename= "assets/theme/css/style.css") }}'>
+  <link rel="stylesheet" href='{{url_for('static', filename= "assets/mobirise/css/mbr-additional.css") }}' type="text/css">
+
+
+
+</head>
+<body>
+  <section class="mbr-section form1 cid-rMZsJpFkdR" id="form1-3">
+
+
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-lg-8">
+                <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Keyphrase Extractor</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-5">Paste your scientifc abstract here:</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8" data-form-type="formoid">
+                <!---Formbuilder Form--->
+                <form action="" method="POST" class="mbr-form form-with-styler">
+                    <div class="row row-sm-offset">
+
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                        </div>
+                    </div>
+                    <div class="dragArea row row-sm-offset">
+
+
+
+                        <div data-for="message" class="col-md-12 form-group">
+                            <label for="message-form1-3" class="form-control-label mbr-fonts-style display-7">Abstract</label>
+                            <textarea name="abstract" data-form-field="Message" class="form-control display-7" id="message-form1-3"></textarea>
+                        </div>
+                        <div class="col-md-12 input-group-btn align-center"><button type="submit" class="btn btn-primary btn-form display-4">EXTRACT</button></div>
+                    </div>
+                </form><!---Formbuilder Form--->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-table cid-rMZsCSirmI" id="table1-1">
+
+
+
+  <div class="container container-table">
+      <h2 class="mbr-section-title mbr-fonts-style align-center pb-3 display-2">Extracted Keyphrases:&nbsp;</h2>
+      {{ keyphrases | safe }}
+      <!-- <div class="table-wrapper">
+        <div class="container">
+          <div class="row search">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="dataTables_filter">
+                  <label class="searchInfo mbr-fonts-style display-7">Search:</label>
+                  <input class="form-control input-sm" disabled="">
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container scroll">
+          <table class="table isSearch" cellspacing="0">
+            <thead>
+              <tr class="table-heads ">
+              <th class="head-item mbr-fonts-style display-7">Key-phrase</th>
+              <th class="head-item mbr-fonts-style display-7">Label - (Process/Task/Material)</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for i in keyphrases %}
+            <tr>
+              <td class="body-item mbr-fonts-style display-7">{{ i }}</td>
+              <td class="body-item mbr-fonts-style display-7">Process</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+          </table>
+        </div>
+        <div class="container table-info-container">
+          <div class="row info">
+            <div class="col-md-6">
+              <div class="dataTables_info mbr-fonts-style display-7">
+                <span class="infoBefore">Showing</span>
+                <span class="inactive infoRows"></span>
+                <span class="infoAfter">entries</span>
+                <span class="infoFilteredBefore">(filtered from</span>
+                <span class="inactive infoRows"></span>
+                <span class="infoFilteredAfter"> total entries)</span>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+</section>
+
+
+  <script src='{{url_for('static', filename= "assets/web/assets/jquery/jquery.min.js") }}'></script>
+  <script src='{{url_for('static', filename= "assets/popper/popper.min.js") }}'></script>
+  <script src='{{url_for('static', filename= "assets/tether/tether.min.js") }}'></script>
+  <script src='{{url_for('static', filename= "assets/bootstrap/js/bootstrap.min.js") }}'></script>
+  <script src='{{url_for('static', filename= "assets/smoothscroll/smooth-scroll.js") }}'></script>
+  <script src='{{url_for('static', filename= "assets/datatables/jquery.data-tables.min.js") }}'></script>
+  <script src='{{url_for('static', filename= "assets/datatables/data-tables.bootstrap4.min.js") }}'></script>
+  <script src='{{url_for('static', filename= "assets/theme/js/script.js") }}'></script>
+
+
+</body>
+</html>

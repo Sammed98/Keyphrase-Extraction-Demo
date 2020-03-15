@@ -1,0 +1,19 @@
+<!--DOCTYPE html-->
+<html>
+  <head>
+    <title>Keyphrase Extraction</title>
+
+  </head>
+  <body>
+
+
+  <form id="create_form" method="post" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="abstract">
+    <br><br>
+    <input type="submit" name="submit" value="Predict"/>
+  </form>
+            
+
+  </body>
+</html>
